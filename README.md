@@ -4,6 +4,8 @@ Eine fotografische Dokumentation des Ihme-Zentrums in Hannover-Linden, entstande
 
 Autor: Wolfram Eberius – [wolfram.eberius.photography](https://wolfram.eberius.photography)
 
+Entstanden ist das Zine im Rahmen des VHS-Bildungsurlaubs [„Sach- und Fotobücher gestalten – Von der Bildauswahl bis zur Druckvorlage"](https://www.vhs-hannover.de/kurssuche/kurs/Sach--und-Fotobuecher-gestalten-Von-der-Bildauswahl-bis-zur-Druckvorlage/262BP54935) an der VHS Hannover, unter der Leitung von Dozent Stefan Oberhauser ([stefanoberhauser.de](https://www.stefanoberhauser.de)).
+
 Dieses Projekt entsteht in Zusammenarbeit mit Claude (Anthropic): Claude greift über das Model Context Protocol (MCP) direkt auf Affinity Publisher auf dem Rechner des Autors zu, kann darin Skripte ausführen, Seiten rendern und die Programmoberfläche bedienen. Das komplette Layout – Textboxen, Seitenzahlen, Bildplatzierung, Impressum usw. – ist auf diesem Weg entstanden. Wie diese Verbindung eingerichtet ist, steht im Abschnitt „Voraussetzungen: Claude-Affinity-Verbindung" unten.
 
 ## Format
