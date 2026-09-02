@@ -28,10 +28,9 @@ Die vollständige, laufend aktualisierte Beschreibung des Inhalts und Layouts st
 |---|---|
 | `Ihme_Zentrum_Hannover_Broschuere.afpub.af` | Das Affinity-Publisher-Dokument – die eigentliche Arbeitsdatei der Broschüre |
 | `Ihme_Zentrum_Hannover_Broschuere.pdf` | Aktueller PDF-Export der Broschüre |
-| `broschuere_drahtheftung_dina5_hoch_1.pdf`, `_2.pdf` | Vorlagen/Referenzdateien des Druckdienstleisters für das Drahtheftungs-A5-Format |
-| `farbprofil-wir-machen-druck/` | ICC-Farbprofil des Druckdienstleisters (`ISOcoated_v2_300_eci.icc`) |
+| `wir-machen-druck/` | Alle Ressourcen des Druckdienstleisters „Wir machen Druck": Vorlagen/Referenzdateien für das Drahtheftungs-A5-Format (`broschuere_drahtheftung_dina5_hoch_1.pdf`, `_2.pdf`) sowie das ICC-Farbprofil (`ISOcoated_v2_300_eci.icc`) |
 | `images/` | Alle Bilddateien: Umschlagmotive (`title.jpg`, `title2.jpg` – aktuell verwendet) und die Fotostrecke (`ihme-01.jpg` … `ihme-11.jpg`, wobei `ihme-11.jpg` bewusst nicht in der Broschüre verwendet wird) |
-| `intro-text.md` | Rohfassung der Ausgangstexte zu Ihme-Zentrum, Promenadologie und Fotografie, aus denen der Einleitungstext auf Seite 4 entwickelt wurde |
+| `text/intro-text.md` | Rohfassung der Ausgangstexte zu Ihme-Zentrum, Promenadologie und Fotografie, aus denen der Einleitungstext auf Seite 4 entwickelt wurde |
 | `projekt.md` | Laufend aktualisierte Projektbeschreibung: Seitenstruktur, Druckspezifikation, Quellen, offene Punkte, verwendete Prompts und Versions-Log |
 | `herausforderungen.md` | Rückblick auf technische Probleme bei der Arbeit mit der Affinity-Skript-Schnittstelle und mögliche Lösungen/Umgehungen |
 | `agent.md` | Arbeitsregeln für KI-Agenten (Claude), die an diesem Projekt weiterarbeiten |
