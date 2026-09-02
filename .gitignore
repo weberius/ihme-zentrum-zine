@@ -1,0 +1,25 @@
+# Affinity Publisher Lock-Dateien (entstehen beim Öffnen des Dokuments)
+*~lock~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Editor-/Backup-/Temp-Dateien
+*~
+*.bak
+*.tmp
+*.swp
+
+# Temporäre Arbeitsdateien (siehe README.md)
+temp/*
