@@ -4,14 +4,14 @@ thema: "Fotografische Dokumentation des Ihme-Zentrums in Hannover im Sommer 2026
 zielgruppe: "Menschen mit Interesse an Architektur und Stadtentwicklung, (ehemalige) Bewohner:innen und Nutzer:innen des Ihme-Zentrums, an Hannover und Brutalismus/Großstrukturen der 1970er interessierte Betrachter:innen"
 typ: "Broschüre (Drahtheftung, DIN A5 hoch, 16 Seiten)"
 kernidee: "Wenn jemand das Heft zuklappt, soll er vor allem die vielschichtige, ambivalente Atmosphäre des Ihme-Zentrums gesehen haben – zwischen Verfall, Aneignung, Graffiti und urbaner Alltagsnutzung."
-version: "0.12"
+version: "0.16"
 datum_erstellung: 2026-09-01
 datum_aktualisierung: 2026-09-01
 ---
 
 # Ihme Zentrum Hannover – Projektbeschreibung
 
-Dieses Dokument beschreibt die konkreten Inhalte und den aktuellen Stand der Broschüre, die gemeinsam mit Claude in Affinity erstellt wird. Es ergänzt die Meta-Informationen im Frontmatter oben und dient als Referenz für spätere Überarbeitungen.
+Dieses Dokument beschreibt die konkreten Inhalte und den aktuellen Stand der Broschüre, die gemeinsam mit Claude in Affinity erstellt wird. Es ergänzt die Meta-Informationen im Frontmatter oben und dient als Referenz für spätere Überarbeitungen. Wiederkehrende technische Probleme bei der Arbeit mit der Affinity-Skript-Schnittstelle und mögliche Lösungen/Umgehungen sind separat in `herausforderungen.md` festgehalten. Feste, vorausschauende Arbeitsregeln für KI-Agenten, die an diesem Projekt weiterarbeiten, stehen in `agent.md`. Eine schnelle inhaltliche Übersicht für Menschen bietet `README.md`.
 
 ## Druckspezifikation
 
@@ -87,6 +87,10 @@ Chronologische Liste der Prompts, mit denen Wolfram die einzelnen Überarbeitung
 - → **0.11**: „Der Schmutztitel ist absichtlich und manuell geändert worden. Jetzt steht dort [...] Der Name taucht erst auf Seite 15 auf. Auch das ist absicht."
 - → **0.12**: „Bitte füge in der projekt.md ein Kapitel 'Prompts' hinzu. Es soll über dem Kapitel 'Logs' stehen und enthält alle Prompts, die ich hier reingeschrieben habe. Bitte verweise dabei auf die log-Einträge"
 
+- → **0.15**: „Enthält die agent.md auch die Anweisung an das LLM stets das Vorgehen (also Prompts und Logs) zu aktualisieren? Wenn nicht, wo müsste das hinterlegt werden?"
+
+- → **0.16**: „Dieses Projekt funktioniert, weil Claude per MCP auf Affinity zugreifen kann. Dieser Umstand sollte in der README.md berücksichtigt werden. Außerdem wäre ein Abschnitt sinnvoll, welche Einstellungen bei Affinity, bzw. bei Claude vorgenommen werden müssen, um die Verbindung herzustellen."
+
 ## Log
 
 - **0.1** (2026-09-01): Projekt angelegt. `projekt.md` mit Frontmatter und Seitenstruktur erstellt. Vorausgegangen war bereits eine Umstellung des Layouts: die beiden leeren Seiten wurden von 14/15 auf 3/4 vorgezogen (Seite 2 bleibt leer), das letzte Foto (`ihme-11.jpg`) wurde vollständig entfernt (vorletzte Seite dadurch leer, mit Platzhalter für einen Impressum-Hinweis am unteren Rand), und auf Seite 3 wurde der Schmutztitel ergänzt (drei Zeilen: „Ihme Zentrum" / „Hannover im August 2026" / „Fotos von Wolfram Eberius", mittig in der oberen Hälfte). Seite 4 enthielt zu diesem Zeitpunkt nur einen Platzhalter für den Einleitungstext.
@@ -101,3 +105,7 @@ Chronologische Liste der Prompts, mit denen Wolfram die einzelnen Überarbeitung
 - **0.10** (2026-09-01): Bildreihenfolge der Fotostrecke (Seite 5–14) auf Nachfrage geprüft und die Einschätzung in einem neuen Abschnitt „Bildreihenfolge" dokumentiert (kein Eingriff in die Affinity-Datei). Dabei aufgefallene Diskrepanz zum Einleitungstext (Wandbild und Treppenhaus-Aufnahme liegen im Heft nicht nebeneinander, wie im dritten Absatz auf Seite 4 beschrieben) als neuen Punkt in „Offene Punkte" aufgenommen.
 - **0.11** (2026-09-01): Schmutztitel auf Seite 3 wurde von Wolfram manuell und absichtlich in Affinity Publisher geändert (außerhalb der Skript-Sandbox) zu „Ihme Zentrum" / „Promenadologische Betrachtungen" / „Hannover 2026", ohne Namensnennung – bestätigt als Absicht, damit der Autorenname erst im Impressum auf Seite 15 erscheint. `projekt.md` entsprechend angepasst (Seitenstruktur-Tabelle korrigiert, zugehöriger Punkt aus „Offene Punkte" entfernt).
 - **0.12** (2026-09-01): Neues Kapitel „Prompts" oberhalb von „Log" ergänzt – eine chronologische Liste aller in dieser Sitzung gestellten Prompts mit Verweis auf den jeweils daraus entstandenen Log-Eintrag. Die Prompts zu 0.1 und 0.2 liegen außerhalb des verfügbaren Gesprächsverlaufs und sind entsprechend als nicht zitierbar vermerkt.
+- **0.13** (2026-09-01): Neue Datei `herausforderungen.md` angelegt, die wiederkehrende technische Probleme dieser Sitzung zusammenfasst (Skript-Zugriff auf Bilder im Projektordner scheitert an der Desktop-only-Sandbox der Affinity-Skript-Schnittstelle; fehlende SDK-Funktionen für Master-Seiten, automatische Seitenzahlen und Grundlinienraster/Spalten; instabile/abbrechende Skript-Ausführung bei blockierenden nativen Dialogen und ein durchgehend fehlerhaftes `search_sdk_hints`-Werkzeug; Vorgaben aus `projekt.md` – konkret „verknüpft, nicht eingebettet" – wurden bei der Wahl der Umsetzungsmethode für den Bildaustausch in Log 0.9 zunächst nicht berücksichtigt) und für jedes Problem Lösungsszenarien inklusive Umgehungsmöglichkeiten vorschlägt. In der Projektbeschreibung oben ein Verweis auf die neue Datei ergänzt.
+- **0.14** (2026-09-01): Zwei neue Dateien angelegt. `agent.md` fasst feste, vorausschauende Arbeitsregeln für KI-Agenten zusammen (Projektregeln wie „Bilder verknüpft, nicht eingebettet", bekannte technische Grenzen der Affinity-Skript-Schnittstelle in Kurzform mit Verweis auf `herausforderungen.md`, sowie Arbeitsweise-Vorgaben wie Verifikation nach Änderungen und Aktualisierung von `projekt.md`). `README.md` bietet eine schnelle inhaltliche Übersicht für menschliche Leser:innen (Projektbeschreibung, Aufbau der Broschüre, Dateiübersicht des Ordners). In der Projektbeschreibung oben Verweise auf beide neuen Dateien ergänzt.
+- **0.15** (2026-09-01): Lücke in `agent.md` behoben, auf Nachfrage entdeckt: Die Arbeitsweise-Regel zur Aktualisierung von `projekt.md` erwähnte zwar das Nachtragen eines Log-Eintrags, aber nicht das Ergänzen des zugehörigen Prompts im Kapitel „Prompts". In `agent.md` ergänzt, dass „Prompts" und „Log" bei jeder Änderung gemeinsam gepflegt werden.
+- **0.16** (2026-09-01): `README.md` ergänzt: Hinweis in der Einleitung, dass das Projekt über eine MCP-Verbindung zwischen Claude und Affinity Publisher entsteht, sowie neuer Abschnitt „Voraussetzungen: Claude-Affinity-Verbindung" mit den konkreten Einstellungen auf beiden Seiten. Affinity-seitig in den Einstellungen unter „Protokoll für Modellkontext (MCP)" per Bildschirmzugriff verifiziert (Hauptschalter „Affinity-MCP aktivieren" sowie Einzelberechtigungen für Desktop-Dateizugriff, Netzwerk, Skripte und Aufgaben-Hinweise); nichts an den Einstellungen verändert, nur dokumentiert. Claude-seitig anhand der bekannten Funktionsweise der Gerätebrücke (Rechner-Verknüpfung, Ordnerfreigabe, Bildschirmsteuerungs-Freigabe) beschrieben.
